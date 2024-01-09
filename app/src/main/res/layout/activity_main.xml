@@ -6,32 +6,44 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <EditText
         android:id="@+id/editTextX"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal" />
+
     <EditText
         android:id="@+id/editTextY"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal" />
+
     <RadioGroup
         android:id="@+id/radioGroupOperation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
+
         <RadioButton
             android:id="@+id/radioButtonAddition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Addition" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSubtraction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtraction" />
     </RadioGroup>
+
     <Button
         android:id="@+id/buttonCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate"
         android:onClick="onClick"/>
+
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="wrap_content"
