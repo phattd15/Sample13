@@ -32,4 +32,9 @@ public class MainActivityTest {
         String y = "X";
         assertThat(MainActivity.makeResult(x, y, R.id.radioButtonAddition), is("Invalid format."));
     }
+
+    @Test
+    public void faultyTesst() {
+        assertThat("True", false);
+    }
 }
